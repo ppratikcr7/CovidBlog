@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import logo from '../../Assets/logo.jpg'
+import logo from '../../Assets/logo_new.png'
 
 const NavStyled = styled.nav`
    background-color:#222;
@@ -47,7 +47,7 @@ export default class Header extends React.PureComponent {
             <>
                 <NavStyled className="navbar navbar-expand-md navbar-dark fixed-top">
                     <AnchorStyled href="/" className="navbar-brand">
-                        <img src={logo} alt="" width="15%"
+                        <img src={logo} alt="" width="25%"
                             height="40" />
                         {/* <i className="fab fa-pagelines animate flash"></i>
                    CovidBlog */}

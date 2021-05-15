@@ -10,6 +10,7 @@ import Header from '../../widget/Header/Header';
 import Home_image from "../../Assets/Home_image.jpg";
 import card1 from "../../Assets/card1.png";
 import card2 from "../../Assets/card2.png";
+import card3 from "../../Assets/card3.png";
 import card4 from "../../Assets/card4.png";
 import user_1 from "../../Assets/user_1.png";
 import { WrapperHome } from './Home.style';
@@ -50,7 +51,7 @@ export default class Home extends React.PureComponent {
                                             <EventCard image={card2} title="Institutional User (Hospitals, Nursing homes or Pharmacies)" desc="good work" myOnClick={() => this.myClickHandler(USER_TYPES.INSTITUTIONAL)} />
                                         </Row>
                                         <Row>
-                                            <EventCard image={card1} title="Vaccine taken Covid Patient" desc="good work" myOnClick={() => this.myClickHandler(USER_TYPES.VACCINE)} />
+                                            <EventCard image={card3} title="Vaccine taken Covid Patient" desc="good work" myOnClick={() => this.myClickHandler(USER_TYPES.VACCINE)} />
                                         </Row>
                                         <Row>
                                             <EventCard image={card4} title="General User (Non-Covid and Non-Vaccinated)" desc="good work" myOnClick={() => this.myClickHandler(USER_TYPES.GENERAL)} />
