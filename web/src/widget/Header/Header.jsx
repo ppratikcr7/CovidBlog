@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import logo from '../../Assets/logo.jpg'
+
 const NavStyled = styled.nav`
    background-color:#222;
    display:flex;  
@@ -45,9 +47,11 @@ export default class Header extends React.PureComponent {
             <>
                 <NavStyled className="navbar navbar-expand-md navbar-dark fixed-top">
                     <AnchorStyled href="/" className="navbar-brand">
-                        <i className="fab fa-pagelines animate flash"></i>
-                   CovidBlog
-              </AnchorStyled>
+                        <img src={logo} alt="" width="15%"
+                            height="40" />
+                        {/* <i className="fab fa-pagelines animate flash"></i>
+                   CovidBlog */}
+                    </AnchorStyled>
                     <button className="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" >
                         <span className="navbar-toggler-icon my-toggler"></span>
                     </button>

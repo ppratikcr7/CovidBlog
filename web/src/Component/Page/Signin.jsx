@@ -1,6 +1,7 @@
 import { Form, Input, Button, Checkbox, Layout } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { WrapperLogin } from './Home.style';
+import 'antd/dist/antd.css';
 
 export default function Signin() {
     const onFinish = (values) => {
@@ -49,26 +50,23 @@ export default function Signin() {
                             placeholder="Password"
                         />
                     </Form.Item>
-                    {/* <Form.Item>
-                    <Form.Item name="remember" valuePropName="checked" noStyle>
-                        <Checkbox>Remember me</Checkbox>
-                    </Form.Item>
-
-                    <a className="login-form-forgot" href="">
-                        Forgot password
-        </a>
-                </Form.Item> */}
-
-                    <Form.Item {...buttonItemLayout}>
-
-                        <Button shape="round" type="primary" htmlType="submit" className="login-form-button button-container">
+                    <Form.Item>
+                        <Button shape="round" block type="primary" htmlType="submit" className="login-form-button button-container">
                             Log in
-        </Button>
+                        </Button>
                         <br />
-                        <a href="/signup">Register Now!</a>
-                        {/* Or <a href="/signup">register now!</a> */}
-                    </Form.Item>
 
+                    </Form.Item>
+                    <div style={{ textAlign: "center" }}>
+                        <div>
+                            <a className="login-form-forgot" href="#">
+                                Forgot password
+                        </a>
+                        </div>
+                        <div>
+                            Don't have an account? <a href="/signup">Register Now!</a>
+                        </div>
+                    </div>
                 </Form>
             </Layout>
         </WrapperLogin>

@@ -8,6 +8,8 @@ export const WrapperHome = styled.div`
 `;
 
 export const WrapperLogin = styled.div`
+text-align:"center";
+align-item:"center";
 #components-form-demo-normal-login .login-form {
   max-width: 300px;
 }
@@ -31,4 +33,10 @@ export const WrapperLogin = styled.div`
             min-height  : 45px;
         }
     }
+`;
+
+export const FormWrapper = styled.div`
+.ant-form-item-extra {
+  display:"flex"
+}
 `;
