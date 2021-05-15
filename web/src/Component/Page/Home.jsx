@@ -37,7 +37,7 @@ export default class Home extends React.PureComponent {
             <>
                 <Layout>
                     <WrapperHome>
-                        <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
+                        <Content className="site-layout" style={{ padding: '0 50px', marginTop: 104 }}>
                             <div className="site-layout-background">
                                 <Row className="home-content">
                                     <Col span={12} >
