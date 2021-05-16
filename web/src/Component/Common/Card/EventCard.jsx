@@ -17,7 +17,7 @@ const EventCard = ({
     ...restProps
 }) => {
     return (
-        <Card hoverable onClick={() => myOnClick()} style={{ width: 600, margin: "5px 15px" }}>
+        <Card hoverable onClick={() => myOnClick()} style={{ width: 600, margin: "5px 250px" }}>
             <Meta
                 avatar={<ReactRoundedImage
                     image={restProps.image}
