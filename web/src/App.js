@@ -7,7 +7,7 @@ import Home from './Component/Page/Home';
 import Signup from './Component/Page/Signup';
 import Header from "./widget/Header/Header"
 import Signin from './Component/Page/Signin';
-// import AddRecipePage from './pages/AddRecipePage';
+import Dashboard from './Component/DashBoard/Dashboard';
 // import AboutPage from './pages/AboutPage';
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
           <Route exact path="/" component={Home}></Route>
           <Route path="/signup" component={Signup}></Route>
           <Route path="/login" component={Signin}></Route>
-          {/* <Route path="/ViewRecipe" ><ViewRecipePage /></Route>
-          <Route path="/Contact" component={ContactPage}></Route> */}
+          <Route path="/dashboard" component={Dashboard}></Route>
+          {/* <Route path="/ViewRecipe" ><ViewRecipePage /></Route> */}
         </Switch>
       </Router>
     </>

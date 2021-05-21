@@ -7,8 +7,8 @@ import ReactRoundedImage from 'react-rounded-image';
 // add image
 import card1 from "../../../Assets/card1.png";
 import card2 from "../../../Assets/card2.png";
+import card3 from "../../../Assets/card3.png";
 import card4 from "../../../Assets/card4.png";
-import user_1 from "../../../Assets/user_1.png";
 
 const { Meta } = Card;
 
