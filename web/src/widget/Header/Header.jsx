@@ -1,16 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import logo from '../../Assets/card3.1.png'
+import logo from '../../Assets/logo.png'
 
 const NavStyled = styled.nav`
-   background-color:#222;
+   background-color:#6495ed;
    display:flex;  
 //    justify-content: space-around; 
 `;
 const AnchorStyled = styled.a`
     :hover{
-        background-color:black;
             }
 `;
 const CollapseDivStyled = styled.div`
@@ -42,15 +41,17 @@ background: #f1f1f1;
 `;
 
 export default class Header extends React.PureComponent {
+    constructor(props) {
+        super(props);
+    }
     render() {
+        const { options } = this.props;
         return (
             <>
                 <NavStyled className="navbar navbar-expand-md navbar-dark fixed-top">
                     <AnchorStyled href="/" className="navbar-brand">
                         <img src={logo} alt="" width="25%"
                             height="50" />
-                        {/* <i className="fab fa-pagelines animate flash"></i>
-                   CovidBlog */}
                     </AnchorStyled>
                     <button className="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" >
                         <span className="navbar-toggler-icon my-toggler"></span>
@@ -64,7 +65,13 @@ export default class Header extends React.PureComponent {
                                 <a href="/About" className="nav-link">AboutUs</a>
                             </li> */}
                             <li className="nav-item ">
-                                <a href="/login" className="nav-link">Login</a>
+                                <a href="/login" className="nav-link">{options ? options.Moments : "Login"}</a>
+                            </li>
+                            <li className="nav-item ">
+                                <a href="/login" className="nav-link">{options && options.Notifications}</a>
+                            </li>
+                            <li className="nav-item ">
+                                <a href="/login" className="nav-link">{options && options.Messages}</a>
                             </li>
                         </ul>
                     </CollapseDivStyled>
