@@ -7,7 +7,7 @@ import { Redirect } from 'react-router-dom';
 
 // Add component
 import Header from '../../widget/Header/Header';
-import Home_image from "../../Assets/0 (1).jpeg";
+import Home_image from "../../Assets/banner.jpeg";
 import card1 from "../../Assets/card1.png";
 import card2 from "../../Assets/card2.png";
 import card3 from "../../Assets/card3.png";
