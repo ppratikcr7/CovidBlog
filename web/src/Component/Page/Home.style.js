@@ -7,6 +7,10 @@ export const WrapperHome = styled.div`
 }
 `;
 
+export const CenterAlign = styled.div`
+justify-content:"center";
+align-item:"center";
+`;
 export const WrapperLogin = styled.div`
 text-align:"center";
 align-item:"center";
