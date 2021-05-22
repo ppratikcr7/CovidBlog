@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Layout, Button, Row, Col, Card, Avatar } from 'antd';
+import { Layout, Button, Row, Col, Card, Avatar, Typography, Space } from 'antd';
 import { TweetCreate } from './Create'
 // import { Tweet } from './detail'
 // import { apiTweetDetail } from './lookup'
@@ -34,55 +34,20 @@ export default function Dashboard(props) {
     }
     return (
         <>
-            <Header options={navOption} />
+            {/* <Header options={navOption} /> */}
 
-            <Layout>
+            {/* <Layout>
                 <Content className="site-layout" style={{ padding: '0 50px', marginTop: 104 }}>
                     <div className="site-layout-background">
-                        {/* <Row>
-                            <div class="w-full lg:w-1/2">
-                                <ul class="list-reset flex">
-                                    <li class="text-center py-3 px-4 border-b-2 border-solid border-transparent border-teal">
-                                        <a href="#" class="text-grey-darker no-underline hover:no-underline">
-                                            <div class="text-sm font-bold tracking-tight mb-1">Tweets</div>
-                                            <div class="text-lg tracking-tight font-bold text-teal">60</div>
-                                        </a>
-                                    </li>
-                                    <li class="text-center py-3 px-4 border-b-2 border-solid border-transparent hover:border-teal">
-                                        <a href="#" class="text-grey-darker no-underline hover:no-underline">
-                                            <div class="text-sm font-bold tracking-tight mb-1">Following</div>
-                                            <div class="text-lg tracking-tight font-bold hover:text-teal">4</div>
-                                        </a>
-                                    </li>
-                                    <li class="text-center py-3 px-4 border-b-2 border-solid border-transparent hover:border-teal">
-                                        <a href="#" class="text-grey-darker no-underline hover:no-underline">
-                                            <div class="text-sm font-bold tracking-tight mb-1">Followers</div>
-                                            <div class="text-lg tracking-tight font-bold hover:text-teal">3,810</div>
-                                        </a>
-                                    </li>
-                                    <li class="text-center py-3 px-4 border-b-2 border-solid border-transparent hover:border-teal">
-                                        <a href="#" class="text-grey-darker no-underline hover:no-underline">
-                                            <div class="text-sm font-bold tracking-tight mb-1">Likes</div>
-                                            <div class="text-lg tracking-tight font-bold hover:text-teal">9</div>
-                                        </a>
-                                    </li>
-                                    <li class="text-center py-3 px-4 border-b-2 border-solid border-transparent hover:border-teal">
-                                        <a href="#" class="text-grey-darker no-underline hover:no-underline">
-                                            <div class="text-sm font-bold tracking-tight mb-1">Moments</div>
-                                            <div class="text-lg tracking-tight font-bold hover:text-teal">1</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </Row> */}
+
                         <Row className="home-content">
                             <Col span={8} >
 
                             </Col>
                             <Col span={8} >
                                 <div className={props.className}>
-                                    {/* {canTweet === true && <TweetCreate didTweet={handleNewTweet} className='col-12 mb-3' />} */}
-                                    {/* <TweetsList newTweets={newTweets} {...props} /> */}
+                                    {canTweet === true && <TweetCreate didTweet={handleNewTweet} className='col-12 mb-3' />}
+                                    <TweetsList newTweets={newTweets} {...props} />
                                 </div>
                             </Col>
                             <Col span={8} >
@@ -91,7 +56,7 @@ export default function Dashboard(props) {
                         </Row>
                     </div>
                 </Content>
-            </Layout>
+            </Layout> */}
             {/* <div class="bg-white">
                 <div class="container mx-auto flex flex-col lg:flex-row items-center py-4">
                     <nav class="w-full lg:w-2/5">
@@ -377,10 +342,10 @@ export default function Dashboard(props) {
                     <div class="bg-white p-3 mb-3">
                         <div>
                             <span class="text-lg font-bold">Who to follow</span>
-                            <span>&middot;</span>
+                            {/* <span>&middot;</span>
                             <span><a href="#" class="text-teal text-xs">Refresh</a></span>
                             <span>&middot;</span>
-                            <span><a href="#" class="text-teal text-xs">View All</a></span>
+                            <span><a href="#" class="text-teal text-xs">View All</a></span> */}
                         </div>
 
                         <div class="flex border-b border-solid border-grey-light">
@@ -393,9 +358,9 @@ export default function Dashboard(props) {
                                         <a href="#" class="font-bold text-black">Nuxt.js</a> <a href="#" class="text-grey-dark">@nuxt_js</a>
                                     </div>
 
-                                    <div>
+                                    {/* <div>
                                         <a href="#" class="text-grey hover:text-grey-dark"><i class="fa fa-times"></i></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div>
                                     <button class="bg-transparent text-xs hover:bg-teal text-teal font-semibold hover:text-white py-2 px-6 border border-teal hover:border-transparent rounded-full">
@@ -414,9 +379,9 @@ export default function Dashboard(props) {
                                         <a href="#" class="font-bold text-black">Laracon EU</a> <a href="#" class="text-grey-dark">@LaraconEU</a>
                                     </div>
 
-                                    <div>
+                                    {/* <div>
                                         <a href="#" class="text-grey hover:text-grey-dark"><i class="fa fa-times"></i></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div>
                                     <button class="bg-transparent text-xs hover:bg-teal text-teal font-semibold hover:text-white py-2 px-6 border border-teal hover:border-transparent rounded-full">
@@ -436,9 +401,9 @@ export default function Dashboard(props) {
                                         <a href="#" class="font-bold text-black">Laracon US</a> <a href="#" class="text-grey-dark">@LaraconUS</a>
                                     </div>
 
-                                    <div>
+                                    {/* <div>
                                         <a href="#" class="text-grey hover:text-grey-dark"><i class="fa fa-times"></i></a>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div>
                                     <button class="bg-transparent text-xs hover:bg-teal text-teal font-semibold hover:text-white py-2 px-6 border border-teal hover:border-transparent rounded-full">
@@ -448,7 +413,7 @@ export default function Dashboard(props) {
                             </div>
                         </div>
 
-                        <div class="flex border-b border-solid border-grey-light">
+                        {/* <div class="flex border-b border-solid border-grey-light">
                             <div class="py-4">
                                 <a href="#" class=" p-1"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/tt_outlook.png" alt="follow1" class="rounded h-6 w-6" /></a>
                             </div>
@@ -462,10 +427,10 @@ export default function Dashboard(props) {
                                     Import your contacts from Outlook
                         </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
-                    <div class="mb-3 text-xs">
+                    {/* <div class="mb-3 text-xs">
                         <span class="mr-2"><a href="#" class="text-grey-darker">&copy; 2021 NSAII   </a></span>
                         <span class="mr-2"><a href="#" class="text-grey-darker">About</a></span>
                         <span class="mr-2"><a href="#" class="text-grey-darker">Help Center</a></span>
@@ -473,10 +438,27 @@ export default function Dashboard(props) {
                         <span class="mr-2"><a href="#" class="text-grey-darker">Privacy policy</a></span>
                         <span class="mr-2"><a href="#" class="text-grey-darker">Cookies</a></span>
                         <span class="mr-2"><a href="#" class="text-grey-darker">Ads info</a></span>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
+            <Footer style={{ textAlign: 'center' }}>
+                <Space size={3}>
+                    <Button type="link">About</Button>
+                    <Button type="link">Help Center</Button>
+                    <Button type="link">Terms Of Service</Button>
+                    <Button type="link">Privacy Policy</Button>
+                    <Button type="link">Cookie Policy</Button>
+                    <Button type="link">Ads info</Button>
+                    <Button type="link">Blog</Button>
+                    <Button type="link">Status</Button>
+                    <Button type="link">Careers</Button>
+                    <Button type="link">Brand Resources</Button>
+                    <Button type="link">Advertising</Button>
+                    <Button type="link">Marketing</Button>
+                </Space>
+                <Typography>Covid Blog ©2021 Created by NSAII</Typography>
+            </Footer>
 
         </>
     )

@@ -64,7 +64,7 @@ export default function Signin() {
                         </a>
                         </div>
                         <div>
-                            Don't have an account? <a href="/signup">Register Now!</a>
+                            Don't have an account? <a href="/">Register Now!</a>
                         </div>
                     </div>
                 </Form>
