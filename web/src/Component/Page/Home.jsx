@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu, Breadcrumb, Button, Row, Col, Card, Avatar } from 'antd';
+import { Layout, Menu, Breadcrumb, Button, Row, Col, Card, Avatar, Typography, Space } from 'antd';
 import ReactRoundedImage from 'react-rounded-image';
 import 'antd/dist/antd.css';
 import styled from 'styled-components';
@@ -47,11 +47,15 @@ export default class Home extends React.PureComponent {
                                 {!this.state.isClicked ?
                                     <Row className="home-content">
                                         <Col span={12} >
-                                            <div style={{ maxWidth: "460px", lineHeight: "38px", textAlign: "start", width: "90%" }}>
-                                                <p style={{ fontSize: "32px", justifyContent: "left" }}><b>When walking alone in a jungle of true darkness, there are three things that can show you the way: instinct to survive, the knowledge of navigation, creative imagination.Without them, you are lost.</b></p>
-                                                <Button onClick={() => this.setState({ isClicked: true })} size={'large'} block type="primary" htmlType="submit" className="login-form-button button-container">
-                                                    Join for free
-                                            </Button>
+                                            <div style={{ marginTop:100, lineHeight: "38px", textAlign: "end", width: "90%" }}>
+                                                <p style={{ fontSize: "46px", justifyContent: "left" }}><b>Happening Now</b></p>
+                                                <p style={{ fontSize: "20px", justifyContent: "left" }}><b>Join The Skirr Today</b></p>
+                                                <Button style={{marginBottom: 10, width: 400}} onClick={() => this.setState({ isClicked: true })} shape="round" size={'large'} block type="primary" htmlType="submit" className="login-form-button button-container">
+                                                    Sign Up
+                                                </Button>
+                                                <Button style={{width: 400}} onClick={() => {}} shape="round" size={'large'} block htmlType="submit" className="login-form-button button-container">
+                                                        Login
+                                                </Button>
                                             </div>
                                         </Col>
                                         <Col span={12} >
@@ -80,7 +84,23 @@ export default class Home extends React.PureComponent {
                             </div>
                         </Content>
                     </WrapperHome>
-                    <Footer style={{ textAlign: 'center' }}>Covid Blog ©2021 Created by NSAII</Footer>
+                    <Footer style={{ textAlign: 'center' }}>
+                        <Space size={3}>
+                            <Button type="link">About</Button>
+                            <Button type="link">Help Center</Button>
+                            <Button type="link">Terms Of Service</Button>
+                            <Button type="link">Privacy Policy</Button>
+                            <Button type="link">Cookie Policy</Button>
+                            <Button type="link">Ads info</Button>
+                            <Button type="link">Blog</Button>
+                            <Button type="link">Status</Button>
+                            <Button type="link">Careers</Button>
+                            <Button type="link">Brand Resources</Button>
+                            <Button type="link">Advertising</Button>
+                            <Button type="link">Marketing</Button>
+                        </Space>
+                        <Typography>Covid Blog ©2021 Created by NSAII</Typography>
+                    </Footer>
                 </Layout>
             </>
         );
