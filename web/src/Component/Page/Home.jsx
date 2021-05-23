@@ -44,12 +44,17 @@ export default class Home extends React.PureComponent {
                     <WrapperHome>
                         <Content className="site-layout" style={{ padding: '0 50px', marginTop: 104 }}>
                             <div className="site-layout-background">
+                                <br/>
                                 {!this.state.isClicked ?
                                     <Row className="home-content">
                                         <Col span={12} >
-                                            <div style={{ marginTop:100, lineHeight: "38px", textAlign: "end", width: "90%" }}>
-                                                <p style={{ fontSize: "46px", justifyContent: "left" }}><b>Happening Now</b></p>
-                                                <p style={{ fontSize: "20px", justifyContent: "left" }}><b>Join The Skirr Today</b></p>
+                                            <img src={Home_image} alt="" width="100%" height="100%" />
+                                        </Col>
+                                        <Col span={12} >
+                                            <div style={{ marginTop:100, lineHeight: "38px", textAlign: "center", width: "90%" }}>
+                                                <p style={{ fontSize: "46px", justifyContent: "right" }}><b>Happening Now</b></p>
+                                                <p style={{ fontSize: "20px", justifyContent: "right" }}><b>Join TheSkirr Today</b></p>
+                                                <br/>
                                                 <Button style={{marginBottom: 10, width: 400}} onClick={() => this.setState({ isClicked: true })} shape="round" size={'large'} block type="primary" htmlType="submit" className="login-form-button button-container">
                                                     Sign Up
                                                 </Button>
@@ -58,9 +63,7 @@ export default class Home extends React.PureComponent {
                                                 </Button>
                                             </div>
                                         </Col>
-                                        <Col span={12} >
-                                            <img src={Home_image} alt="" width="100%" height="80%" />
-                                        </Col>
+                                        
                                     </Row>
                                     :
                                     <Row className="home-content">
